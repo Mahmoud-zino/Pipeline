@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>ElZino</RootNamespace>
+    <AssemblyName>ElZino.Model.$(MSBuildProjectName)</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <Title>$(MSBuildProjectName)</Title>
+    <Authors>ElZino</Authors>
+    <Company>ElZino</Company>
+    <Copyright>(c) 2021 ElZino</Copyright>
+    <PackageProjectUrl>https://github.com/Mahmoud-zino/Pipeline</PackageProjectUrl>
+    <PackageTags>person, model, ElZino</PackageTags>
+    <Version>1.0.0</Version>
+    <Description>Model for Person containing first and lastname</Description>
+    <PackageId>ElZino.Model.PersonLib</PackageId>
+
+    <RepositoryUrl>https://github.com/Mahmoud-zino/Pipeline.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+</Project>

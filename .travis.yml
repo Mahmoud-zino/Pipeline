@@ -1,0 +1,16 @@
+# Travis CI build pipline
+# ----------------------------------------
+
+os: linux
+dist: xenial
+language: csharp
+solution: PiplineLib.sln
+mono: none
+dotnet: 5.0.301
+
+before_script:
+  - set -e
+  - dotnet restore
+
+script:
+  - dotnet build -c Release
