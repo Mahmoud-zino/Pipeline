@@ -10,7 +10,7 @@ namespace ElZino.Models.PersonLib
         public Person(string firstname, string lastname)
         {
             this.FirstName = firstname;
-            this.LasttName = lastname;
+            this.LastName = lastname;
         }
         public string FirstName
         {
@@ -22,19 +22,19 @@ namespace ElZino.Models.PersonLib
                 this.firstName = value;
             }
         }
-        public string LasttName
+        public string LastName
         {
             get => this.lastName;
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
-                    throw new Exception($"{nameof(Person)}:{nameof(LasttName)}");
+                    throw new Exception($"{nameof(Person)}:{nameof(LastName)}");
                 this.lastName = value;
             }
         }
         public override string ToString()
         {
-            return $"{this.FirstName} {this.LasttName}";
+            return $"{this.FirstName} {this.LastName}";
         }
     }
 }
