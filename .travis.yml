@@ -4,7 +4,7 @@
 os: linux
 dist: xenial
 language: csharp
-solution: PiplineLib.sln
+solution: PipelineLib.sln
 mono: none
 dotnet: 5.0.301
 
