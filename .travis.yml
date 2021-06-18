@@ -29,7 +29,7 @@ script:
 before-deploy:
   - set -e
   - dotnet publish PipelineLib.sln -c Release -o output
-  - dotnet pack Pipelinelib.sln -c Release -o nuget
+  - dotnet pack PipelineLib.sln -c Release -o nuget
   - zip ./Pipeline.zip ./output/* ./nuget/*
   - tar cfvz ./Pipeline.tar.gz ./output ./nuget
 
